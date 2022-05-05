@@ -7,7 +7,6 @@
 ---
 ## Executive Summary
 
-<<<<<<< HEAD
 FandomCash addresses numerous problems in the sports industry and the entertainment industry, benefitting a celebrity, organization, or entertainment group and the fan communities engaging with the industry. 
 
 FandomCash identifies several challenges to deepening the engagement between fans and their teams. Solving these challenges include:
@@ -24,16 +23,7 @@ FandomCash uses Blockchain technology to deepen engagement between fans and thei
 ---
 ## Technologies
 
-This smart contract is written in Solidity with [Remix 0.22.2 IDE](https://remix-ide.readthedocs.io/en/latest/index.html)
-=======
----
-## What's Being Created
-
----
-## Technologies
-
 This application is written in Solidity with [Remix 0.22.2 IDE](https://remix-ide.readthedocs.io/en/latest/index.html)
->>>>>>> 286bb835222b3c485f3129acb1b61dfd6ce59587
 
 Other dependencies:
 
@@ -46,7 +36,6 @@ Other dependencies:
  - [TimedCrowdsale](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/validation/TimedCrowdsale.sol) - *Crowdsale accepting contributions only within a time frame.*
  - [RefundablePostDeliveryCrowdsale](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/distribution/RefundablePostDeliveryCrowdsale.sol) - *Extension of RefundableCrowdsale contract that only delivers the tokens once the crowdsale has closed and the goal met, preventing refunds to be issued to token holders.*
  - [SafeMath](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol) - *a library to help you check for overflows in case of addition, underflow in case of substraction as well as when performing multiplication and division.*
-<<<<<<< HEAD
  - [ERC721](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/release-v2.5.0/contracts/token/ERC721) - *a standard for Non-Fungible Tokens.*
  
 The main application is written in Python 3.7 using Jupyter Lab v3.0.14
@@ -67,8 +56,6 @@ prior to running these libraries, install them from the command line:
   - web3: `pip install web3`
   - python-dotenv: `pip install python-dotenv`
   - Requests: `python -m pip install requests`
-=======
->>>>>>> 286bb835222b3c485f3129acb1b61dfd6ce59587
  
 ---
 ## Usage
@@ -83,11 +70,8 @@ Patten Williams - [@pwilli23](https://github.com/pwilli23)
 
 Derek Hall - [@Hderek22](https://github.com/Hderek22)
 
-<<<<<<< HEAD
 Chancie Altham - [@caltham](https://github.com/caltham)
 
-=======
->>>>>>> 286bb835222b3c485f3129acb1b61dfd6ce59587
 Geoff Tarleton - [@blandwhite](https://github.com/blandwhite)
 
 adapted from Starter Code supplied by UNCC FinTech Online Bootcamp by Trilogy Educational Services, a 2U, Inc. brand.
