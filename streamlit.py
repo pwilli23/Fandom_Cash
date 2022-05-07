@@ -5,7 +5,7 @@ import time
 
 st.title(" Welcome to the Fandom Cash Exchange: Building the Brand One Token at a Time!")
 
-df = pd.read_csv("Fandom_items.csv", index_col = "item", parse_dates=True, infer_datetime_format = True)
+df = pd.read_csv("Resources/Fandom_items.csv", index_col = "item", parse_dates=True, infer_datetime_format = True)
 
 def color_negative(val):
     color = 'green' if val else 'red'

@@ -60,6 +60,31 @@ prior to running these libraries, install them from the command line:
 ---
 ## Usage
 
+### Compile FandomCash contract
+
+<img width="297" alt="remix_1" src="https://user-images.githubusercontent.com/94569323/167269372-cac24479-0af5-446e-9483-109a2cf93eeb.png">
+
+### Create MetaMask accounts with Ganache
+
+<img width="310" alt="meta_1" src="https://user-images.githubusercontent.com/94569323/167269410-0d11e220-ca8b-4bbb-b0f2-eea76837fbce.png">
+
+<img width="692" alt="ganache_1" src="https://user-images.githubusercontent.com/94569323/167269401-151e3f2b-09d6-4f2d-b926-9c1ff89b0820.png">
+
+### Use MetaMask to deploy Ganache
+
+<img width="299" alt="remix_2" src="https://user-images.githubusercontent.com/94569323/167269453-ff848734-19d9-4935-9228-1d808d20229d.png">
+
+### Confirm the gas fee and check the new account balance
+
+<img width="351" alt="meta_2" src="https://user-images.githubusercontent.com/94569323/167269470-d11e2e77-8c63-4192-b758-4d8d6c0db07b.png">
+
+<img width="994" alt="ganache_2" src="https://user-images.githubusercontent.com/94569323/167269479-2eacfb90-0735-4f64-a19d-7453b6bbcd6d.png">
+
+### Run Streamlit
+
+<img width="770" alt="streamlit_1" src="https://user-images.githubusercontent.com/94569323/167269506-335ba7a3-0cbf-4692-ad30-d03179384791.png">
+
+<img width="747" alt="streamlit_2" src="https://user-images.githubusercontent.com/94569323/167269513-95a1b5ff-4f31-4115-bce0-da4fce9783be.png">
 
 ---
 
