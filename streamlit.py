@@ -1,9 +1,39 @@
+
+   
 import streamlit as st
 import pandas as pd
 import numpy as np
 import time
 
-st.title(" Welcome to the Fandom Cash Exchange: Building the Brand One Token at a Time!")
+
+
+# Using "with" notation
+with st.sidebar:
+
+    st.image("coins.jpeg")
+
+    budget = st.slider('How much do you have?', 
+    min_value=0, max_value=1000)
+
+with st.sidebar:  
+
+
+        if budget in range(500,1001):
+            st.image('tickets.png')
+
+        if budget in range(300,1001):
+            st.image('jacket.jpeg')     
+
+        if budget in range(150,1001):
+            st.image('basketball.jpeg') 
+
+        if budget in range(100,1001):
+            st.image('hoodie.jpeg') 
+      
+    
+
+
+st.title(" Welcome to the Fandom Cash Marketplace")
 
 df = pd.read_csv("Resources/Fandom_items.csv", index_col = "item", parse_dates=True, infer_datetime_format = True)
 
@@ -16,5 +46,8 @@ df.sort_index(inplace=True, ascending = False)
 start = st.selectbox("Select a Fan Experience item:", df.index)
 
 st.table(df)
+
+title = st.text_input('Please enter your wallet address.', 'Life of Brian')
+st.write('Please confirm your address', title)
 
 
