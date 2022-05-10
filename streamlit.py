@@ -10,7 +10,7 @@ import time
 # Using "with" notation
 with st.sidebar:
 
-    st.image("coins.jpeg")
+    st.image("images/coins.jpeg")
 
     budget = st.slider('How much do you have?', 
     min_value=0, max_value=1000)
@@ -19,16 +19,16 @@ with st.sidebar:
 
 
         if budget in range(500,1001):
-            st.image('tickets.png')
+            st.image('images/tickets.png')
 
         if budget in range(300,1001):
-            st.image('jacket.jpeg')     
+            st.image('images/jacket.jpeg')     
 
         if budget in range(150,1001):
-            st.image('basketball.jpeg') 
+            st.image('images/basketball.jpeg') 
 
         if budget in range(100,1001):
-            st.image('hoodie.jpeg') 
+            st.image('images/hoodie.jpeg') 
       
     
 

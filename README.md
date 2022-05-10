@@ -80,11 +80,9 @@ prior to running these libraries, install them from the command line:
 
 <img width="994" alt="ganache_2" src="https://user-images.githubusercontent.com/94569323/167269479-2eacfb90-0735-4f64-a19d-7453b6bbcd6d.png">
 
-### Run Streamlit
+### Run streamlit.py
 
-<img width="770" alt="streamlit_1" src="https://user-images.githubusercontent.com/94569323/167269506-335ba7a3-0cbf-4692-ad30-d03179384791.png">
-
-<img width="747" alt="streamlit_2" src="https://user-images.githubusercontent.com/94569323/167269513-95a1b5ff-4f31-4115-bce0-da4fce9783be.png">
+![streamlit · Streamlit - 10 May 2022 (1)](https://user-images.githubusercontent.com/94569323/167709760-1bc2ea2f-f573-4032-a489-41cc71356dd2.gif)
 
 ---
 
