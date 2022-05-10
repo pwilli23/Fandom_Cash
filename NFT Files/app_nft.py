@@ -8,7 +8,7 @@ import time
 
 # from pinata import pin_file_to_ipfs, pin_json_to_ipfs, convert_data_to_json
 
-load_dotenv()
+load_dotenv("SAMPLE.env")
 
 # Define and connect a new Web3 provider
 w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
@@ -76,14 +76,14 @@ quantity_purchase = st.slider("Number of Super Pass NFT's to purchase:",min_valu
 total_purchase_eth = quantity_purchase * mint_price_ether
 
 # Confirm total purchase with output to user 
-st.write(f"Your total for {quantity_purchase} Super Pass NFT's is {total_purchase_eth} ETH.")
+st.write(f"Your total for {quantity_purchase} Super Pass NFT is {total_purchase_eth} ETH.")
 
 # Hitting the 'MINT' button will call the mint function
 if st.button("MINT"):
     for i in range(1,quantity_purchase+1):
         tx_hash = contract.functions.mint().transact({'from':address, 'gas':1000000, 'value': mint_price_wei})
         receipt = w3.eth.waitForTransactionReceipt(tx_hash)
-        st.write(f"Transaction receipt mined for Super Pass #{i}:")
+        st.success(f"Transaction receipt mined for Super Pass #{i}:")
         st.write(dict(receipt))
         time.sleep(4)
         st.balloons()
@@ -108,12 +108,13 @@ with st.sidebar:
             #st.write("Minting Disabled")
 
 
-
+# Call the totalSupply function from the Smart Contract
 current_supply = contract.functions.totalSupply().call()
 
+# Display the total supply (minted) NFT's.
 st.sidebar.write(f"The current minted supply is {current_supply}.")
 
-new_max_supply = st.sidebar.number_input("New maximum supply", step=1, min_value=current_supply)
+new_max_supply = st.sidebar.number_input("Enter a number to change the Maximum Supply:", step=1, min_value=current_supply)
 if st.sidebar.button("Update Max Supply"):
     contract.functions.setMaxSupply(new_max_supply
     ).transact({'from':accounts[0], 'gas': 1000000})
