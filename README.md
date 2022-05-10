@@ -19,7 +19,7 @@ FandomCash uses Blockchain technology to deepen engagement between fans and thei
 ---
 ## What's Being Created
 
-We will create a fungible token that is ERC-20 compliant and that will be minted by using a  contract from the OpenZeppelin Solidity library.
+We will create an ERC-20 compliant token that will be minted by using a contract from the OpenZeppelin Solidity library.
 
 We will build a streamlit marketplace that allows users to view and purchase NBA fan experience items.
 
