@@ -64,6 +64,9 @@ prior to running these libraries, install them from the command line:
 ---
 ## Usage
 
+### NFT Minting Demo:
+![](images/nft_streamlit.gif)
+
 ### Compile FandomCash contract
 
 <img width="297" alt="remix_1" src="https://user-images.githubusercontent.com/94569323/167269372-cac24479-0af5-446e-9483-109a2cf93eeb.png">
