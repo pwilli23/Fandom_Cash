@@ -19,9 +19,10 @@ FandomCash uses Blockchain technology to deepen engagement between fans and thei
 ---
 ## What's Being Created
 
-We will create an ERC-20 compliant token that will be minted by using a contract from the OpenZeppelin Solidity library.
+#### FandomCash is composed of 2 main user interfaces:
 
-We will build a streamlit marketplace that allows users to view and purchase NBA fan experience items.
+1. The fan will be able to earn FAN tokens by interacting with the team's social media end points. We will create an ERC-20 compliant token that will be minted by using a contract from the OpenZeppelin Solidity library. The FAN tokens can then be spent on the team's Marketplace in exchange for team paraphrenalia, voting on team decisions and season tickets.
+2. In order to earn FAN tokens, a fan must first purchase a Fandom Super Pass NFT. This NFT, like others, can be sold and transferred while maintaining all the privileges that go with it. The blockchain will serve to document and validate each NFT's rightful owner (as well as show the history of ownership).
 
 ---
 ## Technologies
@@ -86,6 +87,13 @@ prior to running these libraries, install them from the command line:
 ### Run streamlit.py
 
 ![streamlit · Streamlit - 10 May 2022 (1)](https://user-images.githubusercontent.com/94569323/167709760-1bc2ea2f-f573-4032-a489-41cc71356dd2.gif)
+
+---
+## Next Steps / Future Ideas
+
+ - Marketing Plan
+ - Established User Interface
+ - Expand on Voting and other privileges that go with being a Super Pass Fan!
 
 ---
 
