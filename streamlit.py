@@ -1,11 +1,15 @@
 
-   
+from web3 import Web3   
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
+from dotenv import load_dotenv
 import time
 
+load_dotenv("_.env")
 
+w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
 
 # Using "with" notation
 with st.sidebar:
@@ -35,6 +39,7 @@ with st.sidebar:
 
 st.title(" Welcome to the Fandom Cash Marketplace")
 
+
 df = pd.read_csv("Resources/Fandom_items.csv", index_col = "item", parse_dates=True, infer_datetime_format = True)
 
 def color_negative(val):
@@ -47,7 +52,13 @@ start = st.selectbox("Select a Fan Experience item:", df.index)
 
 st.table(df)
 
-title = st.text_input('Please enter your wallet address.', 'Life of Brian')
-st.write('Please confirm your address', title)
+accounts = w3.eth.accounts
+address = st.selectbox("Select Account", options=accounts)
+wallet_balance_wei = w3.eth.getBalance(address)
+wallet_balance_fan_token = int(wallet_balance_wei/100000000000000000)
+st.write(f"Your wallet contains {wallet_balance_fan_token} FAN tokens." )
+
+private_key = st.text_input("Your Private Key")
 
 
+st.button("PURCHASE")
