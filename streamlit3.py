@@ -93,6 +93,7 @@ total = item_database[select_item][1]* quantity
 # * Save the transaction hash that the `send_transaction` function returns as a
 # variable named `transaction_hash`, and have it display on the application’s
 # web interface.
+st.sidebar.write('The Items You Have Selected Cost:')
 st.sidebar.write(total)
 
 
@@ -100,7 +101,7 @@ st.sidebar.write(total)
 # Writes FinTech Finder candidates to the Streamlit page
 
 
-st.title(" Welcome to the Fandom Cash Marketplace")
+st.title(" Welcome to the Fandom Cash Marketplace: Building the Brand One Token at a Time")
 
 
 df = pd.read_csv("Resources/Fandom_items.csv", index_col = "item", parse_dates=True, infer_datetime_format = True)
