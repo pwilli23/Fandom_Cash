@@ -89,6 +89,9 @@ prior to running these libraries, install them from the command line:
 
 ### Run streamlit.py
 
+<img width="1438" alt="Screen Shot 2022-05-11 at 1 30 10 PM" src="https://user-images.githubusercontent.com/93749067/167926444-87c1931b-540f-4e9c-91df-8b4d351cad7a.png">
+
+
 ![streamlit · Streamlit - 10 May 2022 (1)](https://user-images.githubusercontent.com/94569323/167709760-1bc2ea2f-f573-4032-a489-41cc71356dd2.gif)
 
 ---
