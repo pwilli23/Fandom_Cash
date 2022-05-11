@@ -97,9 +97,18 @@ prior to running these libraries, install them from the command line:
 ---
 ## Next Steps / Future Ideas
 
- - Marketing Plan
- - Established User Interface
- - Expand on Voting and other privileges that go with being a Super Pass Fan!
+ - We will create a marketing plan:
+    1. Target market
+    2. Product line expansion
+    3. Competition
+
+- We will establish a User Interface:
+    1. Allow users to navigate easily
+    2. Provide informative feedback
+    3. Design dialog to yield closure
+
+- Expand on Voting and other privileges that go with being a Super Pass Fan!
+
 
 ---
 
