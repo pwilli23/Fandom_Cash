@@ -6,6 +6,7 @@ import numpy as np
 import os
 from dotenv import load_dotenv
 import time
+from web3 import Account
 
 load_dotenv("_.env")
 
@@ -113,18 +114,21 @@ start = st.selectbox("Select a Fan Experience item:", df.index)
 
 st.table(df)
 
+
+
 accounts = w3.eth.accounts
+
 address = st.sidebar.selectbox("Select Account", options=accounts)
 wallet_balance_wei = w3.eth.getBalance(address)
 wallet_balance_fan_token = int(wallet_balance_wei/100000000000000000)
 st.sidebar.write(f"Your wallet contains {wallet_balance_fan_token} FAN tokens." )
 
 private_key = st.sidebar.text_input("Your Private Key")
-
+account=Account.privateKeyToAccount(private_key)
 
 if st.sidebar.button("PURCHASE"):
     
-    transaction_hash = send_transaction(w3, accounts[0], address, 1)
+    transaction_hash = send_transaction(w3, account, accounts[0], 1)
     
     st.sidebar.write(transaction_hash)
 
