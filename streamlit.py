@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 import time
 
+
 load_dotenv("_.env")
 
 w3 = Web3(Web3.HTTPProvider(os.getenv("WEB3_PROVIDER_URI")))
