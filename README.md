@@ -1,4 +1,4 @@
-# Fandom_Cash: Building the Brand One Token at a Time
+# Fandom_Cash: Building Your Brand One Token at a Time
 
 ![workflow](./images/workflow.png)
 
